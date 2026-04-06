@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Primary — Electric Magenta */
+  --color-primary-50:  #FEF0FF;
+  --color-primary-100: #FAD2FD;
+  --color-primary-200: #F0A0F5;
+  --color-primary-300: #E46FEB;
+  --color-primary-400: #D94CE2;
+  --color-primary-500: #C233CE;
+  --color-primary: #931E9C;
+  --color-primary-700: #7A1282;
+  --color-primary-800: #570D5E;
+  --color-primary-900: #36083A;
+  --color-primary-hover: #D94CE2;
+  --color-primary-light: #D94CE2;
+  --color-primary-dark: #7A1282;
+
+  /* Accent — Fuchsia Rose */
+  --color-accent: #C2358A;
+  --color-accent-hover: #E56AAE;
+  --color-accent-subtle: #FDF0F7;
+
+  /* Secondary — Slate Violet */
+  --color-secondary-50:  #F4F2F7;
+  --color-secondary-100: #DDD8E8;
+  --color-secondary-500: #6D5E91;
+  --color-secondary-600: #4A3D66;
+  --color-secondary-800: #272039;
+  --color-secondary-900: #171124;
+
+  /* Neutral — Warm Gray */
+  --color-neutral-50:  #FAF9F7;
+  --color-neutral-100: #F0EEEB;
+  --color-neutral-200: #DDDBD7;
+  --color-neutral-400: #B3B0AB;
+  --color-neutral-500: #7D7A76;
+  --color-neutral-600: #5C5955;
+  --color-neutral-700: #4A4845;
+  --color-neutral-800: #2E2D2B;
+  --color-neutral-900: #1A1918;
+
+  /* Semantic aliases */
+  --color-text: #1A1918;
+  --color-text-light: #5C5955;
+  --color-text-muted: #7D7A76;
+  --color-bg: #FFFFFF;
+  --color-bg-light: #FAF9F7;
+  --color-bg-warm: #FEF0FF;
+  --color-bg-dark: #171124;
+  --color-border: #DDDBD7;
+
+  --font-sans: var(--font-poppins);
+  --font-heading: var(--font-poppins);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
+/* Glass utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-strong {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(23, 17, 36, 0.06);
+}
+
+.glass-dark {
+  background: rgba(23, 17, 36, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(23, 17, 36, 0.06);
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 32px rgba(23, 17, 36, 0.1);
 }

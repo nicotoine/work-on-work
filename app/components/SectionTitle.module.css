@@ -1,0 +1,30 @@
+.wrapper {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+.titleLight {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.underline {
+  width: 4rem;
+  height: 0.25rem;
+  margin: 1.5rem auto 0;
+  border-radius: 9999px;
+  background: var(--color-primary);
+}

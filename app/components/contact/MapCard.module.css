@@ -1,0 +1,22 @@
+.card {
+  composes: glass-strong from global;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.body {
+  padding: 1.5rem;
+}
+
+.venueName {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.address {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}

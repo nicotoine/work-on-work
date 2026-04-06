@@ -1,0 +1,46 @@
+.wrapper {
+  position: relative;
+}
+
+.glowTop {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  width: 9rem;
+  height: 9rem;
+  background-color: var(--color-primary-200);
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.4;
+}
+
+.glowBottom {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  width: 11rem;
+  height: 11rem;
+  background-color: var(--color-secondary-100);
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.3;
+}
+
+.card {
+  position: relative;
+  padding: 0.75rem;
+  border-radius: 1.5rem;
+}
+
+.photo {
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 20rem;
+  aspect-ratio: 3 / 4;
+}
+
+@media (min-width: 768px) {
+  .photo {
+    width: 24rem;
+  }
+}

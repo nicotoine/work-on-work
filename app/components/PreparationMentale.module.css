@@ -1,0 +1,73 @@
+.section {
+  position: relative;
+  padding: 7rem 0;
+  background: white;
+}
+
+.blobLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blobTopRight {
+  position: absolute;
+  top: 10%;
+  right: -8%;
+  width: 35vw;
+  height: 45vh;
+  background: var(--color-primary-100);
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.4;
+}
+
+.blobBottomLeft {
+  position: absolute;
+  bottom: -5%;
+  left: -3%;
+  width: 25vw;
+  height: 30vh;
+  background: var(--color-primary-50);
+  border-radius: 9999px;
+  filter: blur(90px);
+  opacity: 0.35;
+}
+
+.container {
+  position: relative;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.inner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.paragraphLast {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.strong {
+  color: var(--color-text);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

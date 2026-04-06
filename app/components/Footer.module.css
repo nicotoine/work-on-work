@@ -1,0 +1,67 @@
+.footer {
+  position: relative;
+  background: var(--color-primary-50);
+  padding: 4rem 0;
+}
+
+.container {
+  position: relative;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.logoWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoLetter {
+  color: white;
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+}
+
+.logoText {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.accreditation {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+.divider {
+  width: 4rem;
+  height: 2px;
+  background: var(--color-primary);
+  margin: 2rem auto;
+  border-radius: 9999px;
+}
+
+.copyright {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}

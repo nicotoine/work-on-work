@@ -1,0 +1,207 @@
+/* ─── Base reveal reset ─── */
+.reveal {
+  will-change: transform, opacity, clip-path, filter;
+}
+
+/* ─── Variant: fade-up (default — gentle float upward) ─── */
+.fadeUp {
+  composes: reveal;
+  opacity: 0;
+  transform: translateY(2rem);
+  filter: blur(2px);
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fadeUp.visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+
+/* ─── Variant: fade (simple fade, no movement) ─── */
+.fade {
+  composes: reveal;
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.fade.visible {
+  opacity: 1;
+}
+
+/* ─── Variant: slide-left (enter from right) ─── */
+.slideLeft {
+  composes: reveal;
+  opacity: 0;
+  transform: translateX(3rem);
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slideLeft.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ─── Variant: slide-right (enter from left) ─── */
+.slideRight {
+  composes: reveal;
+  opacity: 0;
+  transform: translateX(-3rem);
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slideRight.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ─── Variant: scale (zoom in gently) ─── */
+.scale {
+  composes: reveal;
+  opacity: 0;
+  transform: scale(0.94);
+  filter: blur(3px);
+  transition:
+    opacity 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 450ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 450ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scale.visible {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0px);
+}
+
+/* ─── Variant: clip-up (curtain wipe from bottom) ─── */
+.clipUp {
+  composes: reveal;
+  clip-path: inset(100% 0 0 0);
+  opacity: 0;
+  transition:
+    clip-path 550ms cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 350ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.clipUp.visible {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+/* ─── Variant: clip-left (curtain wipe from right) ─── */
+.clipLeft {
+  composes: reveal;
+  clip-path: inset(0 0 0 100%);
+  opacity: 0;
+  transition:
+    clip-path 550ms cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 350ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.clipLeft.visible {
+  clip-path: inset(0 0 0 0);
+  opacity: 1;
+}
+
+/* ─── Variant: rise (dramatic float — used for hero headlines) ─── */
+.rise {
+  composes: reveal;
+  opacity: 0;
+  transform: translateY(2.5rem) scale(0.98);
+  filter: blur(4px);
+  transition:
+    opacity 600ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 600ms cubic-bezier(0.16, 1, 0.3, 1),
+    filter 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rise.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0px);
+}
+
+/* ─── Variant: flip (subtle 3D tilt) ─── */
+.flip {
+  composes: reveal;
+  opacity: 0;
+  transform: perspective(800px) rotateX(6deg) translateY(1.5rem);
+  transform-origin: bottom center;
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.flip.visible {
+  opacity: 1;
+  transform: perspective(800px) rotateX(0deg) translateY(0);
+}
+
+/* ─── Shared visible state ─── */
+.visible {
+  /* applied by JS; actual properties are in each variant's .visible compound */
+}
+
+/* ─── Stagger container — auto-delays children ─── */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  filter: blur(1px);
+  transition:
+    opacity 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.staggerVisible > *:nth-child(1)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 0ms; }
+.staggerVisible > *:nth-child(2)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 60ms; }
+.staggerVisible > *:nth-child(3)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 120ms; }
+.staggerVisible > *:nth-child(4)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 180ms; }
+.staggerVisible > *:nth-child(5)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 240ms; }
+.staggerVisible > *:nth-child(6)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 300ms; }
+.staggerVisible > *:nth-child(7)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 360ms; }
+.staggerVisible > *:nth-child(8)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 420ms; }
+.staggerVisible > *:nth-child(9)  { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 480ms; }
+.staggerVisible > *:nth-child(10) { opacity: 1; transform: translateY(0); filter: blur(0px); transition-delay: 540ms; }
+
+/* ─── Stagger scale variant — for card grids ─── */
+.staggerScale > * {
+  opacity: 0;
+  transform: scale(0.95) translateY(0.75rem);
+  filter: blur(1px);
+  transition:
+    opacity 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 400ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 400ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.staggerScaleVisible > *:nth-child(1)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 0ms; }
+.staggerScaleVisible > *:nth-child(2)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 70ms; }
+.staggerScaleVisible > *:nth-child(3)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 140ms; }
+.staggerScaleVisible > *:nth-child(4)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 210ms; }
+.staggerScaleVisible > *:nth-child(5)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 280ms; }
+.staggerScaleVisible > *:nth-child(6)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 350ms; }
+.staggerScaleVisible > *:nth-child(7)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 420ms; }
+.staggerScaleVisible > *:nth-child(8)  { opacity: 1; transform: scale(1) translateY(0); filter: blur(0px); transition-delay: 490ms; }
+
+/* ─── Reduce motion ─── */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .fadeUp, .fade, .slideLeft, .slideRight,
+  .scale, .clipUp, .clipLeft, .rise, .flip,
+  .stagger > *, .staggerScale > * {
+    transition-duration: 0ms !important;
+    transition-delay: 0ms !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+}

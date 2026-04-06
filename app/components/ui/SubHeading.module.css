@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.line {
+  height: 1px;
+  flex: 1;
+  max-width: 5rem;
+  background-color: rgb(from var(--color-primary) r g b / 0.2);
+}
+
+.heading {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 1.875rem;
+  }
+}

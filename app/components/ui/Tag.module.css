@@ -1,0 +1,17 @@
+.tag {
+  padding: 0.625rem 1.25rem;
+  background-color: var(--color-primary-50);
+  color: var(--color-primary);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(from var(--color-primary) r g b / 0.1);
+}
+
+.sm {
+  font-size: 0.875rem;
+}
+
+.md {
+  font-size: 15px;
+}

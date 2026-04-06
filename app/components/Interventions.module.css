@@ -1,0 +1,49 @@
+.section {
+  position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: white;
+}
+
+.blobLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blobTopLeft {
+  position: absolute;
+  top: -10%;
+  left: -12%;
+  width: 40vw;
+  height: 60%;
+  background-color: var(--color-primary-50);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.blobBottomRight {
+  position: absolute;
+  bottom: -15%;
+  right: -8%;
+  width: 50vw;
+  height: 55%;
+  background-color: var(--color-primary-50);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.particulierWrapper {
+  margin-bottom: 5rem;
+}

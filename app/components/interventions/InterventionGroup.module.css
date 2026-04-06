@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.cols2md3lg {
+  composes: grid;
+}
+
+.cols3md {
+  composes: grid;
+}
+
+@media (min-width: 768px) {
+  .cols3md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cols2md3lg {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .cols2md3lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

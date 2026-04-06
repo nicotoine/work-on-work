@@ -1,0 +1,60 @@
+.card {
+  composes: glass-strong from global;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.title {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.linkedinRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.linkedinIcon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background: var(--color-primary-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.linkedinSvg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-primary);
+}
+
+.linkedinLabel {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+  color: var(--color-text);
+  font-size: 0.875rem;
+}
+
+.linkedinLink {
+  color: var(--color-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.linkedinLink:hover {
+  color: var(--color-primary-700);
+}

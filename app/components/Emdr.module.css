@@ -1,0 +1,65 @@
+.section {
+  position: relative;
+  padding: 7rem 0;
+  background: white;
+}
+
+.blobLayer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.blobTopRight {
+  position: absolute;
+  top: -20%;
+  right: -5%;
+  width: 35vw;
+  height: 65%;
+  background: var(--color-primary-50);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.blobBottomLeft {
+  position: absolute;
+  bottom: -10%;
+  left: -10%;
+  width: 30vw;
+  height: 45%;
+  background: var(--color-primary-50);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.inner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.paragraphLast {
+  font-size: 1.125rem;
+  color: var(--color-text-light);
+  line-height: 1.75;
+  margin-bottom: 2.5rem;
+}
+
+.strong {
+  color: var(--color-text);
+}
