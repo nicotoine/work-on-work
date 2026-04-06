@@ -11,16 +11,15 @@ export default function Emdr() {
         <div className={styles.blobBottomLeft} />
       </div>
       <div className={styles.container}>
-        <SectionTitle title="Thérapie EMDR : soigner les traumatismes liés au travail" />
+        <SectionTitle title="Thérapie EMDR" />
         <Reveal variant="flip">
           <ContentCard>
             <div className={styles.inner}>
               <p className={styles.paragraph}>
-                L&apos;<strong className={styles.strong}>EMDR</strong> (Eye Movement
-                Desensitization and Reprocessing) est une psychothérapie qui
-                permet de soulager la <strong className={styles.strong}>souffrance au travail</strong>,
-                le stress post-traumatique et les blessures liées aux
-                expériences de vie difficiles. Elle est{" "}
+                L&apos;<strong className={styles.strong}>EMDR</strong> (Eye
+                Movement Desensitization and Reprocessing) est une
+                psychothérapie, qui permet de soulager la souffrance liée aux
+                expériences de vie difficiles dans leur ensemble. Elle est{" "}
                 <strong className={styles.strong}>
                   reconnue dans le monde entier
                 </strong>
@@ -28,9 +27,9 @@ export default function Emdr() {
                 EMDR France.
               </p>
               <p className={styles.paragraphLast}>
-                La thérapie EMDR est une approche thérapeutique unique qui guérit
-                les blessures profondes de l&apos;existence grâce à l&apos;action
-                neuropsychologique des{" "}
+                La thérapie EMDR est une approche thérapeutique unique qui
+                guérit les blessures profondes de l&apos;existence grâce à
+                l&apos;action neuropsychologique des{" "}
                 <strong className={styles.strong}>
                   stimulations bilatérales alternées (SBA)
                 </strong>{" "}

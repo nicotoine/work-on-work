@@ -121,9 +121,7 @@ const jsonLd = {
           },
         ],
       },
-      sameAs: [
-        "https://www.linkedin.com/in/annick-chaline-devos-6866921b/",
-      ],
+      sameAs: ["https://www.linkedin.com/in/annick-chaline-devos-6866921b/"],
       knowsAbout: [
         "Risques psychosociaux",
         "Qualité de vie au travail",
@@ -198,10 +196,10 @@ export default function Home() {
           <Hero />
           <Specificite />
           <Parcours />
+          <Formations />
           <Interventions />
           <PreparationMentale />
           <Emdr />
-          <Formations />
           <Contact />
         </div>
       </main>

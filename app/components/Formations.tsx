@@ -4,14 +4,20 @@ import { Stagger } from "./Reveal";
 import IPRPBadge from "./ui/IPRPBadge";
 import UniversitaireItem from "./formations/UniversitaireItem";
 import FeatureCard from "./ui/FeatureCard";
-import styles from './Formations.module.css';
+import styles from "./Formations.module.css";
 
 const universitaires = [
   { text: "Titre Psychologue du travail", org: "CNAM Paris", highlight: true },
-  { text: "Licence Sciences Humaines et Sociales, mention Travail", org: "CNAM" },
+  {
+    text: "Licence Sciences Humaines et Sociales, mention Travail",
+    org: "CNAM",
+  },
   { text: "DU Risques Psychosociaux", org: "Université Assas-Panthéon" },
   { text: "DESU Coaching professionnel", org: "Université Paris 8" },
-  { text: "DU Coaching et performance mentale", org: "Université de Bourgogne" },
+  {
+    text: "DU Coaching et performance mentale",
+    org: "Université de Bourgogne",
+  },
 ];
 
 const professionnelles = [
@@ -31,11 +37,10 @@ const professionnelles = [
     icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
     items: [
       "EMDR – Niveaux 1 et 2, Thérapie à distance – Institut Français EMDR",
-      "Formatrice Premiers Secours en Santé Mentale – Module Standard – CNFPT",
-      "1ers Secours en Santé Mentale – Module Jeunes – PSSM",
-      "Formation de Formateur Premiers Secours en Santé Mentale – CNFPT",
-      "Intervention en cas de crise suicidaire – Vie 37",
-      "Évaluation du potentiel suicidaire – Vie 37",
+      "Formation de formateur Premiers Secours en Santé Mentale – Module Standard – CNFPT",
+      "Premiers Secours en Santé Mentale – Module Jeunes – PSSM",
+      "Intervention en cas de crise suicidaire – Réseau Vie 37",
+      "Évaluation du potentiel suicidaire – Réseau Vie 37",
       "Urgences Psychologiques Sapeurs-Pompiers – AEPSP",
       "Traumatisme vicariant et fatigue de compassion – AEPSP",
     ],
@@ -46,7 +51,6 @@ const professionnelles = [
     items: [
       "Animateur groupe codéveloppement professionnel et managérial – Cecodev",
       "Animateur groupes d\u0027analyse des pratiques – Fédération Française des Psychologues",
-      "Formation de formateurs – Bureau Veritas",
       "La posture de l\u0027accompagnateur en RH – CNFPT",
       "Manager par le travail réel – EM Lyon",
     ],
@@ -69,11 +73,11 @@ export default function Formations() {
   return (
     <section id="formations" className={styles.section}>
       <div className={styles.blobLayer}>
-        <div className={styles.blobTop} />
-        <div className={styles.blobBottom} />
+        <div className={styles.blobTopLeft} />
+        <div className={styles.blobBottomRight} />
       </div>
       <div className={styles.container}>
-        <SectionTitle title="Formations & qualifications" />
+        <SectionTitle title="Mes formations & qualifications" />
 
         <Reveal variant="scale">
           <div className={styles.badgeWrapper}>
@@ -82,9 +86,7 @@ export default function Formations() {
         </Reveal>
 
         <Reveal variant="fade-up">
-          <h3 className={styles.subHeading}>
-            Formations universitaires
-          </h3>
+          <h3 className={styles.subHeading}>Formations universitaires</h3>
         </Reveal>
         <Stagger className={styles.timeline}>
           <div className={styles.timelineLine} />
@@ -101,9 +103,7 @@ export default function Formations() {
         </Stagger>
 
         <Reveal variant="fade-up">
-          <h3 className={styles.subHeading}>
-            Formations professionnelles
-          </h3>
+          <h3 className={styles.subHeading}>Formations professionnelles</h3>
         </Reveal>
         <Stagger variant="scale" className={styles.proGrid}>
           {professionnelles.map((group) => (

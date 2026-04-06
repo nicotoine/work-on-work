@@ -6,10 +6,10 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const navLinks = [
   { href: "#specificite", label: "Mon approche" },
   { href: "#parcours", label: "Parcours" },
+  { href: "#formations", label: "Formations" },
   { href: "#interventions", label: "Interventions" },
   { href: "#preparation-mentale", label: "Préparation mentale" },
   { href: "#emdr", label: "EMDR" },
-  { href: "#formations", label: "Formations" },
   { href: "#contact", label: "Contact" },
 ];
 

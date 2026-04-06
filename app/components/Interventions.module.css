@@ -13,26 +13,28 @@
   z-index: 0;
 }
 
-.blobTopLeft {
+.blobTop {
   position: absolute;
-  top: -10%;
-  left: -12%;
-  width: 40vw;
-  height: 60%;
-  background-color: var(--color-primary-50);
-  border-radius: 50%;
-  opacity: 0.6;
+  top: -5%;
+  left: -8%;
+  width: 45vw;
+  height: 55vh;
+  background-color: var(--color-primary-100);
+  border-radius: 9999px;
+  filter: blur(120px);
+  opacity: 0.4;
 }
 
-.blobBottomRight {
+.blobBottom {
   position: absolute;
-  bottom: -15%;
-  right: -8%;
-  width: 50vw;
-  height: 55%;
+  bottom: -10%;
+  right: -3%;
+  width: 30vw;
+  height: 40vh;
   background-color: var(--color-primary-50);
-  border-radius: 50%;
-  opacity: 0.5;
+  border-radius: 9999px;
+  filter: blur(100px);
+  opacity: 0.3;
 }
 
 .container {

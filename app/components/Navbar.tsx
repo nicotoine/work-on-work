@@ -20,10 +20,10 @@ export default function Navbar() {
   const links = [
     { href: "#specificite", label: "Ma spécificité" },
     { href: "#parcours", label: "Mon parcours" },
+    { href: "#formations", label: "Formations" },
     { href: "#interventions", label: "Mes interventions" },
     { href: "#preparation-mentale", label: "Préparation mentale" },
     { href: "#emdr", label: "EMDR" },
-    { href: "#formations", label: "Formations" },
   ];
 
   return (

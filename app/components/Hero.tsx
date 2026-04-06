@@ -3,7 +3,7 @@ import Tag from "./ui/Tag";
 import HeroBadge from "./hero/HeroBadge";
 import HeroCTAButtons from "./hero/HeroCTAButtons";
 import HeroPhoto from "./hero/HeroPhoto";
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -27,7 +27,8 @@ export default function Hero() {
           </h1>
 
           <p className={styles.subtitle}>
-            Psychologue du travail &ndash; Orléans, Tours, Paris
+            Psychologue du travail &ndash; <br />
+            Orléans, Tours, Bourge, Paris
           </p>
 
           <div className={styles.tags}>
