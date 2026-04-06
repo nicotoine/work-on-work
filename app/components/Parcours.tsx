@@ -69,7 +69,7 @@ export default function Parcours() {
               <strong className={styles.strong}>
                 formatrice accréditée PSSM FRANCE
               </strong>
-              . Je continue de me former régulièrement et mes connaissances sont
+              . Je me forme régulièrement et mes connaissances sont
               continuellement renouvelées.
             </p>
 
