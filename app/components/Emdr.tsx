@@ -23,12 +23,15 @@ export default function Emdr() {
                 <strong className={styles.strong}>
                   reconnue dans le monde entier
                 </strong>
-                , y compris par l&apos;Organisation Mondiale de la Santé, selon
+                , y compris par l&apos;
+                <strong className={styles.strong}>Organisation Mondiale de la Santé</strong>, selon
                 EMDR France.
               </p>
               <p className={styles.paragraphLast}>
                 La thérapie EMDR est une approche thérapeutique unique qui
-                guérit les blessures profondes de l&apos;existence grâce à
+                guérit les{" "}
+                <strong className={styles.strong}>blessures profondes de l&apos;existence</strong>{" "}
+                grâce à
                 l&apos;action neuropsychologique des{" "}
                 <strong className={styles.strong}>
                   stimulations bilatérales alternées (SBA)
