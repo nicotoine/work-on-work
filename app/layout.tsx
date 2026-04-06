@@ -14,9 +14,9 @@ const siteUrl = "https://www.workonwork.fr";
 
 export const metadata: Metadata = {
   title:
-    "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Paris | Coaching, RPS, QVT",
+    "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Bourges, Paris | Coaching, RPS, QVT",
   description:
-    "Psychologue du travail à Orléans, Tours et Paris. Spécialisée en risques psychosociaux (RPS), qualité de vie au travail (QVT), souffrance au travail, burn-out, coaching professionnel, préparation mentale et EMDR. Cabinet à Saint-Jean-de-la-Ruelle. Habilitée IPRP.",
+    "Psychologue du travail à Orléans, Tours, Bourges et Paris. Spécialisée en risques psychosociaux (RPS), qualité de vie au travail (QVT), souffrance au travail, burn-out, coaching professionnel, préparation mentale et EMDR. Cabinet à Saint-Jean-de-la-Ruelle. Habilitée IPRP.",
   keywords: [
     "psychologue du travail",
     "psychologue du travail Orléans",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Paris",
+      "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Bourges, Paris",
     description:
-      "Psychologue du travail spécialisée RPS, QVT, burn-out, coaching professionnel et EMDR. Plus de 40 ans d'expérience. Cabinet à Saint-Jean-de-la-Ruelle, interventions Orléans, Tours et Paris.",
+      "Psychologue du travail spécialisée RPS, QVT, burn-out, coaching professionnel et EMDR. Plus de 40 ans d'expérience. Cabinet à Saint-Jean-de-la-Ruelle, interventions Orléans, Tours, Bourges et Paris.",
     url: siteUrl,
     siteName: "Work on Work – Annick Chaline Devos",
     locale: "fr_FR",
@@ -65,14 +65,14 @@ export const metadata: Metadata = {
         url: `${siteUrl}${basePath}/annick-chaline-devos.png`,
         width: 500,
         height: 600,
-        alt: "Annick Chaline Devos – Psychologue du travail à Orléans, Tours et Paris",
+        alt: "Annick Chaline Devos – Psychologue du travail à Orléans, Tours, Bourges et Paris",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Paris",
+      "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Bourges, Paris",
     description:
       "Psychologue du travail spécialisée RPS, QVT, burn-out, coaching professionnel et EMDR. Cabinet à Saint-Jean-de-la-Ruelle.",
     images: [`${siteUrl}${basePath}/annick-chaline-devos.png`],

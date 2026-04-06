@@ -24,8 +24,8 @@ export default function Footer() {
               <Image
                 src={`${basePath}/ico_white.png`}
                 alt="Work on Work"
-                width={40}
-                height={40}
+                width={56}
+                height={56}
                 className={styles.logoImg}
               />
               <div className={styles.logoText}>
