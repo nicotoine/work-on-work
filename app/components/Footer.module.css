@@ -1,7 +1,23 @@
 .footer {
   position: relative;
-  background: var(--color-primary-50);
-  padding: 4rem 0;
+  background: var(--color-secondary-900);
+  padding: 4rem 0 0;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-accent) 50%,
+    var(--color-primary) 100%
+  );
 }
 
 .container {
@@ -9,59 +25,207 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: 0 1.5rem;
-  text-align: center;
 }
 
-.logoWrapper {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
+/* ── Grid layout ── */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.logoIcon {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.75rem;
-  background: var(--color-primary);
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 2fr 1fr 1.2fr;
+    gap: 3rem;
+  }
+}
+
+/* ── Brand column ── */
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoRow {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.75rem;
 }
 
-.logoLetter {
-  color: white;
-  font-family: var(--font-heading), sans-serif;
-  font-weight: 700;
+.logoImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
 }
 
 .logoText {
-  font-family: var(--font-heading), sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
 }
 
-.subtitle {
-  color: var(--color-text-light);
-  font-size: 0.875rem;
+.brandName {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.brandAccent {
+  color: var(--color-primary-300);
+}
+
+.brandRole {
+  font-size: 0.625rem;
+  color: var(--color-primary-200);
+  font-family: var(--font-heading), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 500;
+}
+
+.brandDesc {
+  color: var(--color-neutral-400);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  max-width: 28rem;
+}
+
+.iprpBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-primary-200);
+  background: rgba(147, 30, 156, 0.12);
+  border: 1px solid rgba(147, 30, 156, 0.2);
+  border-radius: 100px;
+  padding: 0.375rem 0.875rem;
+  width: fit-content;
+}
+
+.iprpIcon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+/* ── Navigation column ── */
+.navCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.colTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-neutral-400);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   margin-bottom: 0.25rem;
 }
 
-.accreditation {
-  color: var(--color-text-muted);
-  font-size: 0.75rem;
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
+.navLink {
+  color: var(--color-neutral-200);
+  font-size: 0.8125rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: var(--color-primary-300);
+}
+
+/* ── Contact column ── */
+.contactCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.addressBlock {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-neutral-200);
+  font-size: 0.8125rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: var(--color-primary-300);
+}
+
+.addressLine {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--color-neutral-400);
+  font-size: 0.8125rem;
+  margin: 0;
+}
+
+.contactIcon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+/* ── Bottom bar ── */
 .divider {
-  width: 4rem;
-  height: 2px;
-  background: var(--color-primary);
-  margin: 2rem auto;
-  border-radius: 9999px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .copyright {
-  color: var(--color-text-muted);
+  color: var(--color-neutral-500);
   font-size: 0.75rem;
+  margin: 0;
+}
+
+.geo {
+  color: var(--color-neutral-500);
+  font-size: 0.75rem;
+  margin: 0;
 }
