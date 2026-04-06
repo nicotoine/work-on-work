@@ -12,7 +12,15 @@ export default function Specificite() {
       </div>
 
       <div className={styles.container}>
-        <SectionTitle title="Psychologue du travail : ma spécificité & ma mission" />
+        <SectionTitle
+          title={
+            <>
+              Psychologue du travail&nbsp;:
+              <br />
+              ma spécificité &amp; ma mission
+            </>
+          }
+        />
 
         <div className={styles.grid}>
           <Reveal variant="slide-right">
@@ -49,7 +57,8 @@ export default function Specificite() {
                 espace bienveillant d&apos;écoute et de soutien psychologique
               </strong>{" "}
               pour lever les freins professionnels qui vous entravent ou
-              entravent vos collaborateurs&nbsp;. Vous donner des outils pour{" "}
+              entravent vos collaborateurs.
+              <br /> Vous donner des outils pour{" "}
               <strong className={styles.strong}>
                 libérer vos pleins potentiels
               </strong>

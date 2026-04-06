@@ -52,6 +52,14 @@
   }
 }
 
+.grid > * {
+  height: 100%;
+}
+
+.grid > * > * {
+  height: 100%;
+}
+
 .strong {
   color: var(--color-text);
 }
