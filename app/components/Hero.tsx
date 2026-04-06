@@ -28,7 +28,7 @@ export default function Hero() {
 
           <p className={styles.subtitle}>
             Psychologue du travail &ndash; <br />
-            Orléans, Tours, Bourge, Paris
+            Orléans, Tours, Bourges, Paris
           </p>
 
           <div className={styles.tags}>

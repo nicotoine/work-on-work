@@ -22,7 +22,7 @@ export default function Footer() {
           <div className={styles.brandCol}>
             <div className={styles.logoRow}>
               <Image
-                src={`${basePath}/ico.png`}
+                src={`${basePath}/ico_white.png`}
                 alt="Work on Work"
                 width={40}
                 height={40}
