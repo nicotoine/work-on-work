@@ -15,16 +15,18 @@ export default function PreparationMentale() {
         <div className={styles.blobBottomLeft} />
       </div>
       <div className={styles.container}>
-        <SectionTitle title="Préparation mentale" />
+        <SectionTitle title="Préparation mentale et coaching de performance" />
         <Reveal variant="clip-up">
           <ContentCard>
             <div className={styles.inner}>
               <p className={styles.paragraph}>
-                La préparation mentale est un ensemble de techniques permettant de
-                développer certaines habiletés mentales telles que la{" "}
-                <strong className={styles.strong}>concentration</strong>, la{" "}
-                <strong className={styles.strong}>motivation</strong>, l&apos;
-                <strong className={styles.strong}>estime de soi</strong>...
+                La <strong className={styles.strong}>préparation mentale</strong> est
+                un ensemble de techniques permettant de développer vos habiletés
+                mentales&nbsp;: <strong className={styles.strong}>concentration</strong>,{" "}
+                <strong className={styles.strong}>motivation</strong>,{" "}
+                <strong className={styles.strong}>gestion du stress</strong>,{" "}
+                <strong className={styles.strong}>confiance en soi</strong> et
+                estime de soi.
               </p>
               <p className={styles.paragraph}>
                 L&apos;accompagnement en préparation mentale allie phase

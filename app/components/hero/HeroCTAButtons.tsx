@@ -18,6 +18,7 @@ export default function HeroCTAButtons({
       <a
         href={primaryHref}
         className={styles.primaryButton}
+        aria-label="Contacter la psychologue du travail – Discutons de votre projet"
       >
         {primaryLabel}
         <svg
@@ -37,6 +38,7 @@ export default function HeroCTAButtons({
       <a
         href={secondaryHref}
         className={`${styles.secondaryButton} glass-card`}
+        aria-label="En savoir plus sur la psychologue du travail"
       >
         {secondaryLabel}
       </a>

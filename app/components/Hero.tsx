@@ -9,7 +9,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Hero() {
   return (
-    <section className={styles.section}>
+    <header className={styles.section} role="banner">
       <div className={styles.blobLayer}>
         <div className={styles.bgBlobTopRight} />
         <div className={styles.bgBlobBottomLeft} />
@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
 
           <p className={styles.subtitle}>
-            Psychologue du travail
+            Psychologue du travail &ndash; Orléans, Tours, Paris
           </p>
 
           <div className={styles.tags}>
@@ -56,12 +56,12 @@ export default function Hero() {
         <Reveal variant="scale" delay={300} className={styles.photoColumn}>
           <HeroPhoto
             src={`${basePath}/annick-chaline-devos.png`}
-            alt="Annick Chaline Devos - Psychologue du travail"
+            alt="Annick Chaline Devos, psychologue du travail à Orléans, Tours et Paris – spécialiste RPS, QVT, coaching et EMDR"
             width={500}
             height={600}
           />
         </Reveal>
       </div>
-    </section>
+    </header>
   );
 }

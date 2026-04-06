@@ -24,7 +24,7 @@ export default function InterventionModesCard() {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>
-        Modes d&apos;intervention
+        Modes d&apos;intervention &ndash; Orléans, Tours, Paris
       </h3>
       <div className={styles.grid}>
         {modes.map((mode) => (

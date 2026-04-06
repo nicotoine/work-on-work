@@ -13,11 +13,14 @@ export default function Footer() {
           </span>
         </div>
         <p className={styles.subtitle}>
-          Annick Chaline Devos &ndash; Psychologue du travail
+          Annick Chaline Devos &ndash; Psychologue du travail à Orléans, Tours et Paris
         </p>
         <p className={styles.accreditation}>
-          Habilitée IPRP - DREETS Centre-Val de Loire
+          Habilitée IPRP &ndash; DREETS Centre-Val de Loire | RPS, QVT, coaching, EMDR
         </p>
+        <address className={styles.accreditation}>
+          Cabinet de psychologie du travail &ndash; 37 chemin de Chaingy, 45140 Saint-Jean-de-la-Ruelle (Orléans)
+        </address>
         <div className={styles.divider} />
         <p className={styles.copyright}>
           &copy; {new Date().getFullYear()} Work on Work. Tous droits réservés.

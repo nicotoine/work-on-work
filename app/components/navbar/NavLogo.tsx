@@ -8,17 +8,17 @@ export default function NavLogo() {
     <a href="#" className={styles.link}>
       <Image
         src={`${basePath}/ico.png`}
-        alt="Work on Work"
+        alt="Work on Work – Psychologue du travail Orléans Tours Paris"
         width={36}
         height={36}
         className={styles.logo}
       />
       <div className={styles.textGroup}>
         <span className={styles.title}>
-          Work on Work
+          Annick <span className={styles.titleAccent}>Chaline Devos</span>
         </span>
         <span className={styles.subtitle}>
-          Annick Chaline Devos
+          Psychologue du travail
         </span>
       </div>
     </a>

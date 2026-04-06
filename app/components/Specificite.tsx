@@ -12,7 +12,7 @@ export default function Specificite() {
       </div>
 
       <div className={styles.container}>
-        <SectionTitle title="Mon approche & ma mission" />
+        <SectionTitle title="Psychologue du travail : mon approche & ma mission" />
 
         <div className={styles.grid}>
           <Reveal variant="slide-right">
@@ -20,12 +20,15 @@ export default function Specificite() {
               icon="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
               title="Ma spécificité"
             >
-              J&apos;interviens à la croisée de la prévention des risques
-              psychosociaux, de la santé mentale au travail et du développement
-              des performances collectives. Mon approche intégrative allie une
-              rigueur scientifique à des méthodes éprouvées et à un
-              accompagnement humaniste, pour soutenir les professionnels dans
-              des contextes de tension ou de transformation professionnelle.
+              Psychologue du travail intervenant à Orléans, Tours et Paris,
+              j&apos;agis à la croisée de la{" "}
+              <strong className={styles.strong}>prévention des risques psychosociaux (RPS)</strong>,
+              de la <strong className={styles.strong}>santé mentale au travail</strong> et du
+              développement des performances collectives. Mon approche
+              intégrative allie rigueur scientifique, méthodes éprouvées et
+              accompagnement humaniste pour soutenir les professionnels
+              confrontés au <strong className={styles.strong}>burn-out</strong>,
+              à la souffrance au travail ou à une transformation professionnelle.
             </FeatureCard>
           </Reveal>
 
@@ -35,15 +38,15 @@ export default function Specificite() {
               title="Ma mission"
             >
               Vous offrir un{" "}
-              <strong className={styles.strong}>espace bienveillant</strong> et un
-              soutien concret pour lever les freins ou points de blocage
-              professionnels, qui vous entravent ou entravent vos
-              collaborateurs. Vous donner des outils pour{" "}
+              <strong className={styles.strong}>espace bienveillant d&apos;écoute et de soutien psychologique</strong>{" "}
+              pour lever les freins professionnels qui vous entravent ou
+              entravent vos collaborateurs&nbsp;: épuisement professionnel,
+              perte de sens, conflits, harcèlement. Vous donner des outils pour{" "}
               <strong className={styles.strong}>
                 libérer vos pleins potentiels
               </strong>
-              , transformer les aspirations en réussites concrètes et atteindre
-              vos objectifs.
+              , améliorer votre <strong className={styles.strong}>qualité de vie au travail</strong>{" "}
+              et transformer vos aspirations en réussites concrètes.
             </FeatureCard>
           </Reveal>
         </div>

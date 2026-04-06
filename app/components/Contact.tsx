@@ -17,7 +17,7 @@ export default function Contact() {
         <div className={styles.blobBottom} />
       </div>
       <div className={styles.container}>
-        <SectionTitle title="Discutons de votre projet personnalisé" />
+        <SectionTitle title="Contactez votre psychologue du travail" />
         <div className={styles.grid}>
           <Reveal variant="slide-right">
             <ContactForm />

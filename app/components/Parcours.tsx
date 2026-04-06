@@ -13,7 +13,7 @@ export default function Parcours() {
         <div className={styles.blobBottomRight} />
       </div>
       <div className={styles.container}>
-        <SectionTitle title="Mon parcours professionnel" />
+        <SectionTitle title="Mon parcours de psychologue du travail" />
 
         {/* Badge principal */}
         <Reveal variant="scale">
@@ -42,12 +42,13 @@ export default function Parcours() {
         <Reveal variant="flip">
         <div className={styles.card}>
           <p className={styles.paragraph}>
-            <strong className={styles.strong}>Psychologue du travail</strong>, je me
+            <strong className={styles.strong}>Psychologue du travail</strong> installée
+            près d&apos;Orléans et intervenant également à Tours et Paris, je me
             suis spécialisée dans les{" "}
-            <strong className={styles.strong}>Risques Psychosociaux</strong> et la{" "}
-            <strong className={styles.strong}>Qualité de Vie au Travail</strong>. Je
+            <strong className={styles.strong}>risques psychosociaux (RPS)</strong> et la{" "}
+            <strong className={styles.strong}>qualité de vie au travail (QVT)</strong>. Je
             suis également{" "}
-            <strong className={styles.strong}>Coach professionnel</strong> et{" "}
+            <strong className={styles.strong}>coach professionnel</strong> et{" "}
             <strong className={styles.strong}>
               Coach à la performance mentale
             </strong>
