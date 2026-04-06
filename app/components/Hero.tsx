@@ -5,6 +5,8 @@ import HeroCTAButtons from "./hero/HeroCTAButtons";
 import HeroPhoto from "./hero/HeroPhoto";
 import styles from './Hero.module.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section className={styles.section}>
@@ -53,7 +55,7 @@ export default function Hero() {
 
         <Reveal variant="scale" delay={300} className={styles.photoColumn}>
           <HeroPhoto
-            src="/annick-chaline-devos.png"
+            src={`${basePath}/annick-chaline-devos.png`}
             alt="Annick Chaline Devos - Psychologue du travail"
             width={500}
             height={600}

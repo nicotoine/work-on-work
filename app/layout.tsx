@@ -9,13 +9,15 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   title: "Annick Chaline Devos - Psychologue du travail | Orléans Tours Paris",
   description:
     "Psychologue du travail spécialisée dans les risques psychosociaux, la qualité de vie au travail, le coaching professionnel et la préparation mentale. Cabinet à Saint-Jean de la Ruelle.",
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: `${basePath}/favicon.ico`,
+    apple: `${basePath}/apple-touch-icon.png`,
   },
 };
 
