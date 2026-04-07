@@ -4,10 +4,10 @@ import styles from "./Footer.module.css";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const navLinks = [
-  { href: "#specificite", label: "Mon approche" },
-  { href: "#parcours", label: "Parcours" },
-  { href: "#formations", label: "Formations" },
-  { href: "#interventions", label: "Interventions" },
+  { href: "#specificite", label: "Ma spécificité" },
+  { href: "#parcours", label: "Mon parcours" },
+  { href: "#formations", label: "Mes formations" },
+  { href: "#interventions", label: "Mes interventions" },
   { href: "#preparation-mentale", label: "Préparation mentale" },
   { href: "#emdr", label: "EMDR" },
   { href: "#contact", label: "Contact" },
@@ -36,7 +36,7 @@ export default function Footer() {
               </div>
             </div>
             <p className={styles.brandDesc}>
-              Psychologue du travail à Orléans, Tours et Paris.
+              Psychologue du travail à Orléans, Tours, Bourges et Paris.
               Spécialisée RPS, QVT, coaching professionnel, préparation mentale et EMDR.
             </p>
             <div className={styles.iprpBadge}>
@@ -116,7 +116,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Work on Work. Tous droits réservés.
           </p>
           <p className={styles.geo}>
-            Orléans &middot; Tours &middot; Paris
+            Orléans &middot; Tours &middot; Bourges &middot; Paris
           </p>
         </div>
       </div>

@@ -70,16 +70,15 @@ export default function Interventions() {
 
         <div className={styles.particulierWrapper}>
           <InterventionGroup
-            heading="Particulier"
-            items={particulier}
-            columns="cols3md"
+            heading="Entreprises"
+            items={entreprises}
+            columns="cols2md3lg"
           />
         </div>
-
         <InterventionGroup
-          heading="Entreprises"
-          items={entreprises}
-          columns="cols2md3lg"
+          heading="Particulier"
+          items={particulier}
+          columns="cols3md"
         />
       </div>
     </section>
