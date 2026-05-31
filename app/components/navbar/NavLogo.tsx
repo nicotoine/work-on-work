@@ -1,11 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './NavLogo.module.css';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function NavLogo() {
   return (
-    <a href="/" className={styles.link}>
+    <Link href="/" className={styles.link}>
       <Image
         src={`${basePath}/ico.png`}
         alt="Work on Work – Psychologue du travail Orléans Tours Paris"
@@ -21,6 +22,6 @@ export default function NavLogo() {
           Psychologue du travail
         </span>
       </div>
-    </a>
+    </Link>
   );
 }

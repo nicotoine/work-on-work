@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './MobileMenu.module.css';
 
 interface NavLink {
@@ -15,22 +16,22 @@ export default function MobileMenu({ links, onClose }: MobileMenuProps) {
     <div className={styles.wrapper}>
       <div className={styles.inner}>
         {links.map((l) => (
-          <a
+          <Link
             key={l.href}
             href={l.href}
             onClick={onClose}
             className={styles.link}
           >
             {l.label}
-          </a>
+          </Link>
         ))}
-        <a
+        <Link
           href="/#contact"
           onClick={onClose}
           className={styles.contactButton}
         >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );
