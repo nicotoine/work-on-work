@@ -25,7 +25,7 @@ export default function MobileMenu({ links, onClose }: MobileMenuProps) {
           </a>
         ))}
         <a
-          href="#contact"
+          href="/#contact"
           onClick={onClose}
           className={styles.contactButton}
         >

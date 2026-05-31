@@ -5,7 +5,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function NavLogo() {
   return (
-    <a href="#" className={styles.link}>
+    <a href="/" className={styles.link}>
       <Image
         src={`${basePath}/ico.png`}
         alt="Work on Work – Psychologue du travail Orléans Tours Paris"

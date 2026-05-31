@@ -22,7 +22,7 @@ export default function NavLinks({ links }: NavLinksProps) {
         </a>
       ))}
       <a
-        href="#contact"
+        href="/#contact"
         className={styles.contactButton}
       >
         Contact

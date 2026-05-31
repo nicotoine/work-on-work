@@ -229,3 +229,29 @@
   font-size: 0.75rem;
   margin: 0;
 }
+
+.bottomLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .bottomLinks {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.legalLink {
+  color: var(--color-neutral-400);
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.legalLink:hover {
+  color: var(--color-primary-300);
+}

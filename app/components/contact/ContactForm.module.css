@@ -45,19 +45,42 @@
   width: 100%;
   padding: 0.875rem 1.25rem;
   border-radius: 0.75rem;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: white;
+  border: 1px solid var(--color-border);
   outline: none;
   transition: all 0.2s;
   font-size: 0.875rem;
-  resize: none;
-  backdrop-filter: blur(4px);
+  font-family: inherit;
+  color: var(--color-text);
+  resize: vertical;
+  min-height: 6.5rem;
 }
 
 .textarea:focus {
   border-color: var(--color-primary);
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-primary) 20%, transparent);
-  background: rgba(255, 255, 255, 0.7);
+}
+
+.textareaSm {
+  composes: textarea;
+  min-height: 4.5rem;
+}
+
+.select {
+  composes: input;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.75rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'><path d='M1 1.5L6 6.5L11 1.5' stroke='%23931E9C' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1.125rem center;
+  background-size: 0.75rem auto;
+  cursor: pointer;
+}
+
+.select::-ms-expand {
+  display: none;
 }
 
 .submitButton {
@@ -74,7 +97,128 @@
   transition: all 0.2s;
 }
 
-.submitButton:hover {
+.submitButton:hover:not(:disabled) {
   box-shadow: 0 20px 25px -5px color-mix(in srgb, var(--color-primary) 30%, transparent);
   transform: translateY(-2px);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ── Honeypot (hidden anti-bot field) ── */
+.honeypot {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* ── Consent checkbox ── */
+.consentRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  padding: 0.25rem 0;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: 0.15rem;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.consentLabel {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  cursor: pointer;
+}
+
+.consentLink {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.consentLink:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ── Error message ── */
+.errorMsg {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.625rem;
+  background: #FDECEC;
+  border: 1px solid #F5C0C0;
+  color: #8A1F1F;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* ── Success state ── */
+.successPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem 0.5rem;
+}
+
+.successIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--color-primary) 12%, white);
+  color: var(--color-primary);
+  display: grid;
+  place-items: center;
+}
+
+.successIcon svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.successTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.successText {
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  max-width: 26rem;
+  margin: 0;
+}
+
+.successButton {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.successButton:hover {
+  background: var(--color-primary);
+  color: white;
 }

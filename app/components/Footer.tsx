@@ -1,16 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const navLinks = [
-  { href: "#specificite", label: "Ma spécificité" },
-  { href: "#parcours", label: "Mon parcours" },
-  { href: "#formations", label: "Mes formations" },
-  { href: "#interventions", label: "Mes interventions" },
-  { href: "#preparation-mentale", label: "Préparation mentale" },
-  { href: "#emdr", label: "EMDR" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#specificite", label: "Ma spécificité" },
+  { href: "/#parcours", label: "Mon parcours" },
+  { href: "/#formations", label: "Mes formations" },
+  { href: "/#interventions", label: "Mes interventions" },
+  { href: "/#preparation-mentale", label: "Préparation mentale" },
+  { href: "/#emdr", label: "EMDR" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -115,9 +116,14 @@ export default function Footer() {
           <p className={styles.copyright}>
             &copy; {new Date().getFullYear()} Work on Work. Tous droits réservés.
           </p>
-          <p className={styles.geo}>
-            Orléans &middot; Tours &middot; Bourges &middot; Paris
-          </p>
+          <div className={styles.bottomLinks}>
+            <Link href="/mentions-legales" className={styles.legalLink}>
+              Mentions légales
+            </Link>
+            <span className={styles.geo}>
+              Orléans &middot; Tours &middot; Bourges &middot; Paris
+            </span>
+          </div>
         </div>
       </div>
     </footer>
