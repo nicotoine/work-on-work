@@ -127,6 +127,22 @@ export default function ContactForm() {
         </div>
 
         <div>
+          <label htmlFor="phone" className={styles.label}>
+            Téléphone <span className={styles.optional}>(facultatif)</span>
+          </label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            autoComplete="tel"
+            className={styles.input}
+            placeholder="06 12 34 56 78"
+            inputMode="tel"
+            pattern="[0-9+\s().-]{6,}"
+          />
+        </div>
+
+        <div>
           <label htmlFor="type" className={styles.label}>
             Type de demande
           </label>
@@ -142,6 +158,7 @@ export default function ContactForm() {
             </option>
             <option value="individuelle">Demande individuelle</option>
             <option value="entreprise">Demande entreprise</option>
+            <option value="autre">Autre</option>
           </select>
         </div>
 
