@@ -28,6 +28,7 @@ jobs:
       - run: npm ci
       - run: npx next build
         env:
+          PAGES: "true"
           NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
 
       - uses: actions/upload-pages-artifact@v3
