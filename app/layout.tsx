@@ -9,7 +9,6 @@ const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const siteUrl = "https://www.workonwork.fr";
 
 export const metadata: Metadata = {
@@ -62,9 +61,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${siteUrl}${basePath}/annick-chaline-devos.png`,
-        width: 500,
-        height: 600,
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
         alt: "Annick Chaline Devos – Psychologue du travail à Orléans, Tours, Bourges et Paris",
       },
     ],
@@ -75,7 +74,7 @@ export const metadata: Metadata = {
       "Annick Chaline Devos – Psychologue du travail Orléans, Tours, Bourges, Paris",
     description:
       "Psychologue du travail spécialisée RPS, QVT, burn-out, coaching professionnel et EMDR. Cabinet à Saint-Jean-de-la-Ruelle.",
-    images: [`${siteUrl}${basePath}/annick-chaline-devos.png`],
+    images: ["/opengraph-image.png"],
   },
   robots: {
     index: true,
@@ -89,8 +88,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: `${basePath}/favicon.ico`,
-    apple: `${basePath}/apple-touch-icon.png`,
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
